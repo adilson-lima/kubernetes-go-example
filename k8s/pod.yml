@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: webserver
+  labels:
+    name: webserver
+
+spec:
+  containers:
+    - name: webserver
+      image: adilsonpereiralima/simple_go_server
+      ports:
+        - containerPort: 8080
